@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="javascript" id="name1">
+    <input type="button" onclick="fnfocus()" value="focus">
+    <input type="button" onclick="fnblur()" value=" blur">
+    <input type="button" onclick="fnselect()" value="select">
+
+
+   <script>
+
+      function fnfocus() {
+      document.getElementById("name1").focus()
+    }   
+
+      function fnblur() {
+      document.getElementById("name1").blur()
+    }
+    function fnselect(){
+        document.getElementById("name1").select()
+        alert("selected")
+
+    }
+</script>
+
+</body>
+</html>

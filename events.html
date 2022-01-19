@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" id="f1" action="" method="post">
+        <label>enter your name:</label>
+        <input type="text" id="txt1" onfocus="fnfocus()"> <br /> <br /> <br />
+        <label>enter your age:</label>
+        <input type="number" id="txt2" onblur="fnblur()"><br /><br /><br />
+        <label>enter the phoneno:</label>
+        <input type="number" id="txt3" onselect="fnselect()" value="9999999999"><br /><br /><br />
+        <label id="txt5">enter the district</label>
+        <select id="txt4" onchange="fnchange()">
+            <option>kohikode</option>
+            <option>kannur</option>
+            <option>palakkad</option>
+            <option>wayanad</option>
+        </select> <br /><br /><br />
+        <button onclick="fnclick()">click me</button>
+        <p id="para" onmouseup="fnup()" onmousedown="fndown()">Lorem ipsum dolor sit amet, consectetur ad
+            ipisicing elit. Voluptates atque suscipit quaerat rerum minus cupiditate voluptatum dolore. Dolori
+            bus, quidem perspiciatis. Quo ipsam co
+            rporis quia magnam aperiam doloremque aliquid dolorem ex?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, placeat
+             recusandae iure molestiae beatae ex quaerat numquam consequuntur tenetur dolores 
+            saepe, iste excepturi voluptatibus eius. Officiis nihil sit assumenda veniam.</p>
+
+
+
+    </form>
+    <script>
+        function fnfocus(){
+            document.getElementById("txt1").style.background="pink"
+        }
+
+        function fnblur(){
+            document.getElementById("txt2").style.background="orange"
+        }
+
+        function fnselect(){
+            alert("you had selected the phoneno")
+        
+        }
+        function fnchange(){
+            alert("selected the district")
+
+        }
+        function fnclick() {
+        alert("hai hello")
+        }
+        function fnup() {
+        document.getElementById("para").style.color = "green";
+        }
+
+        function fndown() {
+        document.getElementById("para").style.color = "yellow";
+        }
+
+
+    </script>
+
+
+
+
+    
+</body>
+</html>

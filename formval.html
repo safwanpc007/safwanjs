@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ------------------------reset and submit(methods)--------------------------------- -->
+    
+    <form name="form" action="" method="post" id="form1" onreset="fnreset()" onsubmit="fnsubmit()">
+        <label>name</label>
+        <input type="text" name="txt1"><br /><br /><br /><br />
+        <label>age</label>
+        <input type="number" name="txt2"><br /><br /><br /><br />
+        <button type="button" id="btn" onclick="freset()" value="reset">RESET</button>
+        <button type="button" id="btn1" onclick="fsubmit()" value="submit">SUBMIT</button><br /><br /><br /><br />
+    
+    
+    
+<!-- ----------------------------------onreset onsubmit (events)----------------------------->
+
+
+        <label>phno</label>
+        <input type="number">
+        <input type="reset"><br /><br /><br /><br />
+
+
+        <label>place</label>
+        <input type="text">
+        <input type="submit">
+    
+    </form>
+
+ 
+
+
+
+
+
+    <script>
+        function freset(){
+            document.getElementById("form1").reset()
+            alert("form reseted")
+    
+        
+        }
+        function fsubmit(){
+            document.getElementById("form1").submit()
+            alert("form submitted")
+        
+        }
+        function fnreset(){
+            alert("form reseted")
+        }
+
+        function fnsubmit(){
+            alert("form submitted")
+        }
+
+        
+         
+         
+    
+    
+    
+        
+    
+    </script>
+</body>
+</html>
